@@ -31,10 +31,13 @@ This outputs a structured summary of tracks, devices, clips, and MIDI content.
 See `{wiki_path}/reference/ableton-als-format.md` for XML structure details.
 
 **To add a reference manual (PDF):**
+Drop the PDF into `{wiki_path}/inbox/`, then run `/process-reference`.
+The skill handles conversion, front-matter, and updating `index.md` and `log.md`.
+
+Manual conversion (if needed):
 ```
 python scripts/pdf_to_markdown.py "input.pdf" "{wiki_path}/manuals/name.md"
 ```
-Then add an entry to `{wiki_path}/index.md`.
 
 **To capture session notes:**
 Write to `{wiki_path}/sessions/YYYY-MM-DD-project-name.md` using the template
